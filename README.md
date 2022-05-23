@@ -25,3 +25,5 @@
 - How to code your MAX7219-PCB to display text
 - How to take advantage of Scrolling text to break normal text capacity
 - How to create animations in Small and Large displays, such as the basic 8x8 grid and the large 8x32 display
+
+### Update status: https://img.shields.io/github/last-commit/minecon099/MAX72XX-Tutorial
