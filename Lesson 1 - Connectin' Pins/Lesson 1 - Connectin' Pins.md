@@ -1,8 +1,9 @@
 # Lesson 1 - Connectin' Pins
 ## Learn about your display
+Quite simple actually, this is a MAX7219, it has an 8x8 LED display of a single color (usually red or blue) and has 5 pins that can be connected into pins for "GROUND", "5V" and more pins (We'll talk about connections later too!) as well as other 5 pins that can be used to connect another 8x8 or 8x32 display which can increase its length (but never it's height sadly), it's last "official" developer used the nowadays outdated library LedControl.h to use your panel. But that's a really old and lame option for our times, so instead we'll be using 3 new libraries (shown later in this tutorial) and we'll be able to use both models for any cassion.
 
 ## Connect your display
-You may spot that some of you know literally nothing of what you are using, what are those funny letters on the place like "CLK" "CS"... Welp, those pins are they key to booting up your screen and printng messages to! (We'll get to that later).
+You may spot that some of you know literally nothing of what you are using, what are those funny letters on the place like "CLK" "CS"... Welp, those pins are they key  booting up your screen and printng messages to! (We'll get to that later).
 So, first you need to know which pin belongs to which pin, so grab your female to male wire and follow the next steps:
 *Note that we'll use model MAX7219 for this lesson. Both 8x8 and 8x32 models for this display work fine though.*
 - Connect pin "5V" to the pin "VCC" of your MAX7219
@@ -25,7 +26,8 @@ Finally, just include the libraries in your code with the following code:
 #include <MD_MAX72XX.h>
 #include <SPI.h>
 ```
-And to add your hardware specifications you can type the following code depending on your model
+And to add your hardware specifications you can type the following code depending on your model:
+
 **For 8x8 model:**
 ```cpp
 #define HARDWARE_TYPE MD_MAX72XX::FC16_HW
@@ -38,3 +40,4 @@ And to add your hardware specifications you can type the following code dependin
 #define MAX_DEVICES 4
 #define CS_PIN 3
 ```
+### Yahoo! - You completed Lesson 1! 🎉
