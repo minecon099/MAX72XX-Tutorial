@@ -14,7 +14,7 @@
 - Couldn't find SPI.h's repo soo...
 
 ## So what will I need? - And what will I learn?
-**Ingredients: **
+**Ingredients:**
 - C++ previous knowledge, because experience is key for mastery at dominating this libraries
 - 1x Arduino UNO (Preferred model, that's the one I'm using and it's the cheapest option for my case lol)
 - 1x MAX7219-PCB (That's what we'll be using, even if there are better screens this will be our screen and your best friend in this tutorial)
